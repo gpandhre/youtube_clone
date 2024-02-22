@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}   
+.navbar .start .logo img{
+    height: 80px;
+    width: 150px;
+    
+    
+}
+.start{
+    margin-top: 15px;
+    position: relative;
+    left: -90px;
+    width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.start .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    
+    
+}
+.navbar i{
+    cursor: pointer;
+}
+.start .menu i{
+    font-size: 30px;
+    padding: 15px;
+}
+.start .location{
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+.center{
+    margin-top: 5px;
+    position: relative;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center .mic{
+    background: #cccccc45;
+    height: 60px;
+    width: 60px;
+    margin-left: 25px;
+    border: 0.5px solid #ccc;
+    border-radius:50%;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+
+}
+.center .mic i{
+    text-align: center;
+    position: relative;
+    top: -8px;
+    left: -1px;
+}
+.center .searchbox{
+    display: flex;
+}
+.searchbox input{
+    height: 60px;
+    min-width: 800px;
+    padding:15px 20px;
+    border-right:0.5px solid #ccc ;
+    border-bottom:0.5px solid #ccc ;
+    border-left:0.5px solid #ccc ;
+    border-top:0.5px solid #ccc ;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px;
+    transition: all 0.2s ease-in;
+
+}
+.searchbox button{
+    height: 60px;
+    width: 100px;
+    border: none;
+    padding: 10px 20px;
+    border-left: none;
+    border-bottom:0.5px solid #ccc ;
+    border-right:0.5px solid #ccc ;
+    border-top:0.5px solid #ccc ;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    font-size: 30px;
+
+}
+.searchbox button i{
+    text-align: center;
+}
+.searchbox input{
+    font-size: 25px;
+
+}
+
+
+.navbar .end{
+    margin-top: -15px;
+    position: relative;
+    right: -80px;
+    width: 300px;
+    height: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.end img{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+.end i{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-left: 10px;
+}
+.end .bell{
+    margin-top: 20px;
+}
+
+.end .user{
+    height: 55px;
+    width: 55px;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    background: #000000;
+    cursor: pointer;
+}
+.navbar .center .searchbox input:focus{
+    outline: none;
+    border: 0.5px solid blue;
+}
+.mainbody{
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.sidebar{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    overflow: scroll;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.sidebar .sidebar-categories{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.sidebar .sidebar-category{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    transition: all 0.5ms ease-in;
+}
+.sidebar .sidebar-category i{
+    font-size: 40px;
+}
+.sidebar .sidebar-category span{
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.sidebar-category:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+hr{
+    background-color: #e5e5e5;
+    height: 1px;
+    border: none;
+}
+
+.container1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+
+}
+.container1 .v1{
+    width:540px;
+    height: 300px;
+    margin-top:110px ;
+    margin-left:60px ;
+}
+.container1 .v1 .thumbnail{
+    width:540px;
+    height: 300px;
+    
+}
+.container1 .v1 img{
+    width: 100%;
+    height: 100%;
+}
+.container1 .v1 .pro{
+    font-size: 60px;
+}
+.container1 .v1 .vdetails1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+.container1 .v1 .vdetails1 .title{
+    width: 480px;
+    margin-left: 10px
+}
+
+.container1 .v1 .vdetails2{
+    font-size: 20px;
+    color: #5b5959;
+    margin-left: 70px;
+    margin-top: -5px;
+    font-weight: 400;
+}
+.container1 .v1 .vdetails2 a{
+    text-decoration: none;
+    color: #5b5959;
+}
+.vdetails2 .channel .details{
+    margin-top: 5px;
+
+} 
+.container2{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+}
